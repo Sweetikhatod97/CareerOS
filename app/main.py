@@ -8,6 +8,7 @@ from app.api.v1.education import router as education_router
 from app.api.v1.skill import router as skill_router
 from app.api.v1.experience import router as experience_router
 from app.api.v1.project import router as project_router
+from app.api.v1.certification import router as certification_router
 
 app = FastAPI(
     title=settings.app_name,
@@ -21,3 +22,4 @@ app.include_router(education_router)
 app.include_router(skill_router)
 app.include_router(experience_router)
 app.include_router(project_router)
+app.include_router(certification_router)
