@@ -53,3 +53,9 @@ class User(Base):
         uselist=False,
         cascade="all, delete-orphan"
     )
+
+    educations = relationship(
+        "Education",
+        back_populates="user",
+        cascade="all, delete-orphan"
+    )
