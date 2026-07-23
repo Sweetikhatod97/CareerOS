@@ -59,3 +59,9 @@ class User(Base):
         back_populates="user",
         cascade="all, delete-orphan"
     )
+
+    skills = relationship(
+        "Skill",
+        back_populates="user",
+        cascade="all, delete-orphan"
+    )
